@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Loading -->
+    <div id="loading" class="screen">
+      <header class="board-head">
+        <span class="brand">Hawa</span>
+      </header>
+      <div class="notice">
+        <div class="idle-cells" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        <p class="notice-line">Fetching forecast</p>
+      </div>
+    </div>
+
+    <!-- Location permission -->
+    <div id="permission" class="screen hidden">
+      <header class="board-head">
+        <span class="brand">Hawa</span>
+      </header>
+      <div class="notice">
+        <p class="notice-line">Where are you?</p>
+        <p class="notice-text">Share your location, or search for a city.</p>
+        <button id="grant-btn" class="btn btn-primary">Share location</button>
+        <div class="city-search-wrap">
+          <label class="field-label" for="city-search">City</label>
+          <input type="text" id="city-search" class="city-input" placeholder="Istanbul, London…" autocomplete="off">
+          <div id="city-results" class="city-results hidden"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Error -->
+    <div id="error" class="screen hidden">
+      <header class="board-head">
+        <span class="brand">Hawa</span>
+      </header>
+      <div class="notice">
+        <p class="notice-line notice-alert">Delayed</p>
+        <p class="notice-text" id="error-message">Something went wrong.</p>
+        <button id="retry-btn" class="btn btn-primary">Try again</button>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <div id="main" class="screen hidden">
+      <header class="board-head">
+        <span class="brand">Hawa</span>
+        <span class="head-city" id="city-name">---</span>
+        <span class="head-time" id="local-time">--:--</span>
+        <button id="settings-btn" class="icon-btn" title="Settings" aria-label="Settings">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="18" x2="20" y2="18"></line>
+            <circle cx="9" cy="6" r="2" fill="#121212"></circle><circle cx="15" cy="12" r="2" fill="#121212"></circle><circle cx="7" cy="18" r="2" fill="#121212"></circle>
+          </svg>
+        </button>
+      </header>
+
+      <section class="now" aria-label="Now">
+        <span class="flaps flaps-big" id="now-temp" aria-live="polite">--°</span>
+        <div class="now-meta">
+          <img id="now-icon" class="now-icon" src="weather-icons/not-available.svg" alt="">
+          <p class="now-text" id="now-text">---</p>
+          <p class="now-sub">Feels <span id="now-feels">--°</span> · H <span id="now-high">--°</span> L <span id="now-low">--°</span></p>
+        </div>
+      </section>
+
+      <p class="lead" id="lead">
+        <span class="lead-label flaps" id="lead-label">---</span>
+        <span class="lead-when flaps" id="lead-when"></span>
+      </p>
+
+      <div class="board" role="table" aria-label="Next 24 hours">
+        <div class="board-cols" role="row">
+          <span role="columnheader">Time</span>
+          <span role="columnheader">Sky</span>
+          <span role="columnheader" class="num">Temp</span>
+          <span role="columnheader" class="num">Rain</span>
+        </div>
+        <div id="hourly" role="rowgroup"></div>
+      </div>
+
+      <h2 class="board-title">Week</h2>
+      <div class="board" role="table" aria-label="7 days">
+        <div class="board-cols board-cols-week" role="row">
+          <span role="columnheader">Day</span>
+          <span role="columnheader">Sky</span>
+          <span role="columnheader" class="num">Rain</span>
+          <span role="columnheader" class="num">Low</span>
+          <span role="columnheader" class="num">High</span>
+        </div>
+        <div id="daily" role="rowgroup"></div>
+      </div>
+
+      <dl class="strip">
+        <div><dt>Humidity</dt><dd id="stat-humidity">--</dd></div>
+        <div><dt>Wind</dt><dd id="stat-wind">--</dd></div>
+        <div><dt>Rain today</dt><dd id="stat-rain">--</dd></div>
+        <div><dt>Air</dt><dd><span class="aqi-mark" id="aqi-dot"></span><span id="stat-aqi">--</span></dd></div>
+      </dl>
+
+      <p class="credits">
+        Weather <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>
+        · Places © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>
+        · Icons <a href="https://meteocons.com/" target="_blank" rel="noopener">Meteocons</a>
+      </p>
+    </div>
+
+    <!-- Settings -->
+    <div id="settings" class="screen hidden">
+      <header class="board-head">
+        <button id="back-btn" class="icon-btn" title="Back" aria-label="Back">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M19 12H5M12 19l-7-7 7-7"></path>
+          </svg>
+        </button>
+        <span class="brand">Settings</span>
+      </header>
+      <div class="settings-body">
+        <section class="setting">
+          <h2 class="setting-label">Location</h2>
+          <div class="location-row">
+            <span id="current-location" class="current-location">---</span>
+            <button id="change-location-btn" class="btn btn-quiet">Change</button>
+          </div>
+          <div id="settings-city-search" class="city-search-wrap hidden">
+            <label class="field-label" for="settings-city-input">City</label>
+            <input type="text" id="settings-city-input" class="city-input" placeholder="Search for a city" autocomplete="off">
+            <div id="settings-city-results" class="city-results hidden"></div>
+          </div>
+          <button id="use-location-btn" type="button" class="btn btn-quiet use-location-btn">Use my current location</button>
+        </section>
+        <section class="setting">
+          <h2 class="setting-label">Units</h2>
+          <div class="segmented" role="group" aria-label="Units">
+            <button class="seg" data-unit="celsius">°C · km/h</button>
+            <button class="seg" data-unit="fahrenheit">°F · mph</button>
+          </div>
+        </section>
+        <section class="setting">
+          <h2 class="setting-label">Clock</h2>
+          <div class="segmented" role="group" aria-label="Clock">
+            <button class="seg" data-format="24h">24 hour</button>
+            <button class="seg" data-format="12h">12 hour</button>
+          </div>
+        </section>
+        <section class="setting">
+          <h2 class="setting-label">Temperature on toolbar</h2>
+          <div class="segmented" role="group" aria-label="Temperature on toolbar">
+            <button class="seg" data-badge="on">On</button>
+            <button class="seg" data-badge="off">Off</button>
+          </div>
+        </section>
+        <section class="setting">
+          <h2 class="setting-label">Rain alerts</h2>
+          <div class="segmented" role="group" aria-label="Rain alerts">
+            <button class="seg" data-rain="on">On</button>
+            <button class="seg" data-rain="off">Off</button>
+          </div>
+          <p class="setting-hint">A notification when rain is expected within the hour.</p>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script src="shared.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+.DS_Store
+*.zip
+
+# Impeccable working files (sketches, review captures, decision rounds)
+.impeccable/mocks/
+.impeccable/review/
+.impeccable/questions/
+.impeccable/decision-*.json

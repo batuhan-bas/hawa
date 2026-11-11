@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hawa - Privacy Policy</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0f1923;
+      color: #e8edf2;
+      padding: 40px 20px;
+      max-width: 640px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+    h1 { font-size: 24px; margin-bottom: 8px; }
+    h2 { font-size: 17px; margin: 24px 0 8px; color: #4fc3a1; }
+    p { font-size: 14px; color: #a0b0c0; margin-bottom: 12px; }
+    .date { font-size: 12px; color: #5a6a7a; margin-bottom: 32px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    li { font-size: 14px; color: #a0b0c0; margin-bottom: 6px; }
+    a { color: #4fc3a1; }
+  </style>
+</head>
+<body>
+  <h1>Hawa - Privacy Policy</h1>
+  <p class="date">Last updated: November 11, 2026</p>
+
+  <h2>Data Collected</h2>
+  <p>Hawa only uses the following data to show the weather:</p>
+  <ul>
+    <li><strong>Location data:</strong> your latitude and longitude, obtained through the browser's Geolocation API and only with your permission.</li>
+    <li><strong>City search text:</strong> if you search for a city instead of sharing your location, the name you type.</li>
+  </ul>
+
+  <h2>How Data Is Used</h2>
+  <ul>
+    <li>To fetch the forecast and air quality for your location (via Open-Meteo)</li>
+    <li>To find the city you search for (via Open-Meteo geocoding)</li>
+    <li>To show the name of your city when you share your location (via OpenStreetMap Nominatim)</li>
+  </ul>
+
+  <h2>Data Storage</h2>
+  <ul>
+    <li>Your location, settings and the last forecast are stored only in your browser's local storage (chrome.storage.local).</li>
+    <li>Hawa has no servers of its own and does not collect, sell or track anything. The only data that leaves your browser goes to the services below, and only to answer your request.</li>
+    <li>All local data is automatically deleted when you uninstall the extension.</li>
+  </ul>
+
+  <h2>Third-Party Services</h2>
+  <p>Hawa sends requests to these services, which have their own privacy policies:</p>
+  <ul>
+    <li><strong>Open-Meteo</strong> (<a href="https://open-meteo.com/en/terms">open-meteo.com</a>): forecast, air quality and city search. Your coordinates, or the city name you typed, are sent.</li>
+    <li><strong>OpenStreetMap Nominatim</strong> (nominatim.openstreetmap.org): turns your coordinates into a city name when you share your location. Your coordinates are sent.</li>
+  </ul>
+
+  <h2>Contact</h2>
+  <p>For questions, please open an issue on <a href="https://github.com/batuhan-bas/hawa">GitHub</a>.</p>
+</body>
+</html>

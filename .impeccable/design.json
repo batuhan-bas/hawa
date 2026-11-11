@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-12T00:30:00Z",
+  "title": "Design System: Hawa",
+  "extensions": {
+    "colorMeta": {
+      "sky-top": { "role": "neutral", "displayName": "Sky Top", "canonical": "oklch(64.4% 0.132 245)", "tonalRamp": ["#00003e", "#00225e", "#004280", "#0062a2", "#2683c6", "#4da6eb", "#75ccff", "#9ff8ff"] },
+      "sky": { "role": "neutral", "displayName": "Sky", "canonical": "oklch(53.0% 0.132 249)", "tonalRamp": ["#00003f", "#00205f", "#004081", "#0560a4", "#3481c8", "#58a3ec", "#7ecaff", "#a8f5ff"] },
+      "sky-bottom": { "role": "neutral", "displayName": "Sky Bottom", "canonical": "oklch(49.2% 0.127 251)", "tonalRamp": ["#00003e", "#00205e", "#003f7f", "#155fa2", "#3b81c6", "#5ea3eb", "#83c9ff", "#adf5ff"] },
+      "night-sky-top": { "role": "neutral", "displayName": "Night Sky Top", "canonical": "oklch(39.9% 0.103 260)", "tonalRamp": ["#000135", "#012054", "#1c3e75", "#3a5d97", "#587dba", "#789fde", "#9dc5ff", "#c6f0ff"] },
+      "night-sky": { "role": "neutral", "displayName": "Night Sky", "canonical": "oklch(32.0% 0.082 259)", "tonalRamp": ["#00062d", "#08224b", "#243f6b", "#415e8c", "#5f7eae", "#80a0d2", "#a4c6fa", "#cef1ff"] },
+      "night-sky-bottom": { "role": "neutral", "displayName": "Night Sky Bottom", "canonical": "oklch(26.0% 0.067 260)", "tonalRamp": ["#000827", "#0f2344", "#2a4063", "#475e84", "#667ea6", "#86a0c9", "#abc6f0", "#d4f0ff"] },
+      "cell": { "role": "neutral", "displayName": "Flap Cell", "canonical": "rgba(255, 255, 255, 0.16)", "tonalRamp": ["rgba(255,255,255,0.04)", "rgba(255,255,255,0.08)", "rgba(255,255,255,0.12)", "rgba(255,255,255,0.16)", "rgba(255,255,255,0.24)", "rgba(255,255,255,0.36)", "rgba(255,255,255,0.6)", "rgba(255,255,255,0.92)"] },
+      "cell-split": { "role": "neutral", "displayName": "Split Hairline", "canonical": "rgba(6, 40, 82, 0.35)", "tonalRamp": ["#00062e", "#02234c", "#1f406c", "#3c5f8d", "#5b7fb0", "#7ba1d4", "#a0c7fc", "#c9f2ff"] },
+      "well": { "role": "neutral", "displayName": "Well", "canonical": "rgba(4, 30, 64, 0.34)", "tonalRamp": ["#000828", "#092446", "#254065", "#425f86", "#617fa8", "#81a1cb", "#a6c7f3", "#d0f1ff"] },
+      "seam": { "role": "neutral", "displayName": "Seam", "canonical": "rgba(255, 255, 255, 0.2)", "tonalRamp": ["rgba(255,255,255,0.05)", "rgba(255,255,255,0.1)", "rgba(255,255,255,0.15)", "rgba(255,255,255,0.2)", "rgba(255,255,255,0.3)", "rgba(255,255,255,0.45)", "rgba(255,255,255,0.65)", "rgba(255,255,255,0.9)"] },
+      "ink": { "role": "neutral", "displayName": "White Ink", "canonical": "oklch(100% 0 0)", "tonalRamp": ["#0b0b0b", "#242424", "#404040", "#5d5d5d", "#7d7d7d", "#9e9e9e", "#c4c4c4", "#ffffff"] },
+      "ink-2": { "role": "neutral", "displayName": "Ink 2", "canonical": "oklch(96.2% 0.015 242)", "tonalRamp": ["#060c11", "#1e252b", "#394147", "#565f66", "#767f86", "#97a0a7", "#bcc6cd", "#e6f0f8"] },
+      "ink-3": { "role": "neutral", "displayName": "Ink 3", "canonical": "oklch(95.1% 0.019 241)", "tonalRamp": ["#050c13", "#1c252d", "#374149", "#545f68", "#737f88", "#94a0aa", "#bac6d0", "#e4f1fb"] },
+      "ink-on-warm": { "role": "neutral", "displayName": "Warm Ink", "canonical": "oklch(29.8% 0.052 80)", "tonalRamp": ["#160700", "#312101", "#4e3d1e", "#6d5a3b", "#8e7a5a", "#b09b7a", "#d6c19e", "#ffebc8"] },
+      "solari": { "role": "primary", "displayName": "Sun Yellow", "canonical": "oklch(88.0% 0.135 86)", "tonalRamp": ["#220000", "#3f1800", "#5e3600", "#7f5500", "#a17600", "#c39720", "#ebbd51", "#ffe87e"] },
+      "solari-cell": { "role": "primary", "displayName": "Sun Cell", "canonical": "oklch(83.4% 0.141 84)", "tonalRamp": ["#240000", "#421500", "#623400", "#825300", "#a47400", "#c79513", "#efbb4b", "#ffe678"] },
+      "solari-hover": { "role": "primary", "displayName": "Lit Sun", "canonical": "oklch(90.4% 0.113 87)", "tonalRamp": ["#1e0200", "#3a1c00", "#593900", "#785800", "#9a7819", "#bc9a43", "#e3c06a", "#ffea94"] },
+      "peach": { "role": "secondary", "displayName": "Peach", "canonical": "oklch(87.5% 0.080 57)", "tonalRamp": ["#210000", "#3f1600", "#5f330e", "#7f512e", "#a2714d", "#c5926d", "#edb792", "#ffe2bb"] },
+      "rain-chip": { "role": "tertiary", "displayName": "Rain Chip", "canonical": "rgba(255, 255, 255, 0.92)", "tonalRamp": ["rgba(255,255,255,0.2)", "rgba(255,255,255,0.32)", "rgba(255,255,255,0.44)", "rgba(255,255,255,0.56)", "rgba(255,255,255,0.68)", "rgba(255,255,255,0.8)", "rgba(255,255,255,0.92)", "#ffffff"] },
+      "rain-chip-ink": { "role": "tertiary", "displayName": "Rain Chip Ink", "canonical": "oklch(43.3% 0.118 254)", "tonalRamp": ["#00003a", "#00205a", "#003f7b", "#265f9e", "#4780c1", "#68a2e6", "#8dc8ff", "#b6f3ff"] },
+      "rain-chip-ink-night": { "role": "tertiary", "displayName": "Rain Chip Ink (Night)", "canonical": "oklch(32.0% 0.082 259)", "tonalRamp": ["#00062d", "#08224b", "#243f6b", "#415e8c", "#5f7eae", "#80a0d2", "#a4c6fa", "#cef1ff"] },
+      "alert": { "role": "tertiary", "displayName": "Alert Blush", "canonical": "oklch(89.9% 0.054 38)", "tonalRamp": ["#1d0200", "#3a190f", "#59352a", "#795347", "#9a7266", "#bd9386", "#e5b9ab", "#ffe3d5"] },
+      "aqi-1": { "role": "data", "displayName": "EAQI Good" },
+      "aqi-2": { "role": "data", "displayName": "EAQI Fair" },
+      "aqi-3": { "role": "data", "displayName": "EAQI Moderate" },
+      "aqi-4": { "role": "data", "displayName": "EAQI Poor" },
+      "aqi-5": { "role": "data", "displayName": "EAQI Very Poor" },
+      "aqi-6": { "role": "data", "displayName": "EAQI Extremely Poor" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "The current temperature, one character per big flap cell." },
+      "headline": { "displayName": "Headline", "purpose": "The single line on a notice screen." },
+      "title": { "displayName": "Title", "purpose": "Current condition beside the temperature; settings location name at 600." },
+      "lead": { "displayName": "Lead", "purpose": "The lead plate's flap characters." },
+      "row": { "displayName": "Row", "purpose": "Hour and day board rows." },
+      "body": { "displayName": "Body", "purpose": "Notice text, input text, city result names, strip values." },
+      "head": { "displayName": "Head", "purpose": "Header row, buttons, segments." },
+      "sub": { "displayName": "Sub", "purpose": "Feels-like and high/low line." },
+      "hint": { "displayName": "Hint", "purpose": "Setting hints, search status, quiet buttons." },
+      "detail": { "displayName": "Detail", "purpose": "City result country/region line." },
+      "label": { "displayName": "Label", "purpose": "Column heads, setting and field labels, credits." },
+      "label-strip": { "displayName": "Strip Label", "purpose": "Stats-strip labels." }
+    },
+    "shadows": [],
+    "gradients": [
+      { "name": "sky-ground-day", "value": "linear-gradient(180deg, #2675bb 0, #1f6fb4 180px, #1a63a6 100%) fixed", "purpose": "Page ground while the sun is up at the location." },
+      { "name": "sky-ground-night", "value": "linear-gradient(180deg, #24467e 0, #17325c 180px, #0f2344 100%) fixed", "purpose": "Page ground via body.night when is_day is 0." }
+    ],
+    "motion": [
+      { "name": "flap", "value": "360ms cubic-bezier(0.22, 1, 0.36, 1); rotateX(90deg) -> rotateX(-8deg) at 60% -> 0, brightness(1.6) -> none", "purpose": "A changed character flipping in on re-render." },
+      { "name": "flap-stagger", "value": "45ms per character index", "purpose": "Left-to-right stagger across a flap word; only changed characters flip." },
+      { "name": "idle", "value": "1.4s ease-in-out infinite, brightness(1.7) at 35%, 0.1s stagger", "purpose": "Blank flap cells pulsing while the forecast loads." },
+      { "name": "reduced-motion", "value": "@media (prefers-reduced-motion: reduce) { animation: none }", "purpose": "Flips and idle pulse off." }
+    ],
+    "breakpoints": [
+      { "name": "popup", "value": "360px wide, 600px max height (Chrome cap)" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Flap Word",
+      "kind": "custom",
+      "refersTo": "flap-cell-big",
+      "description": "Changing values set one character per translucent split-flap cell; the current temperature at display size.",
+      "html": "<div class=\"ds-ground\"><span class=\"ds-flaps\"><span class=\"ds-f\">2</span><span class=\"ds-f ds-flip\">0</span><span class=\"ds-f ds-deg\">°</span></span></div>",
+      "css": ".ds-ground { padding: 14px; background: linear-gradient(180deg, #2675bb, #1f6fb4); } .ds-flaps { display: inline-flex; gap: 2px; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-size: 66px; font-weight: 700; font-variant-numeric: tabular-nums; color: #ffffff; perspective: 300px; } .ds-f { position: relative; display: inline-block; min-width: 46px; padding: 2px 2px 0; text-align: center; background: rgba(255,255,255,0.16); border-radius: 2px; line-height: 1; } .ds-f.ds-deg { min-width: 30px; } .ds-f::after { content: ''; position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: rgba(6,40,82,0.35); } .ds-flip { animation: ds-flap 360ms cubic-bezier(0.22, 1, 0.36, 1) both; } @keyframes ds-flap { 0% { transform: rotateX(90deg); filter: brightness(1.6); } 60% { transform: rotateX(-8deg); } 100% { transform: rotateX(0); filter: none; } } @media (prefers-reduced-motion: reduce) { .ds-flip { animation: none; } }"
+    },
+    {
+      "name": "Lead Plate",
+      "kind": "custom",
+      "refersTo": "lead-plate",
+      "description": "The full-width sun plate: the next change, and when. No split hairline at this size.",
+      "html": "<div class=\"ds-ground\"><p class=\"ds-lead\"><span class=\"ds-lf\"><span>R</span><span>A</span><span>I</span><span>N</span></span><span class=\"ds-lf\"><span>1</span><span>0</span><span>:</span><span>0</span><span>0</span></span></p></div>",
+      "css": ".ds-ground { padding: 14px; background: #1f6fb4; } .ds-lead { display: flex; justify-content: space-between; align-items: center; height: 38px; margin: 0; padding: 0 10px; border-radius: 2px; background: #ffd166; color: #3b2a0a; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-size: 19px; font-weight: 700; letter-spacing: 0.1em; font-variant-numeric: tabular-nums; } .ds-lf { display: inline-flex; gap: 1px; } .ds-lf > span { display: inline-block; min-width: 0.66em; padding: 0 1px; text-align: center; background: #f4c04f; border-radius: 2px; line-height: 1.3; }"
+    },
+    {
+      "name": "Board Row",
+      "kind": "custom",
+      "refersTo": "board-row",
+      "description": "A 34px timetable line with the peach NOW chip and the white rain chip at 30% or more.",
+      "html": "<div class=\"ds-ground\"><div class=\"ds-row\"><span class=\"ds-now\">NOW</span><span class=\"ds-sky\">CLEAR</span><span class=\"ds-num\">20°</span><span class=\"ds-num\">0%</span></div><div class=\"ds-row\"><span>10:00</span><span class=\"ds-sky\">CLEAR</span><span class=\"ds-num\">21°</span><span class=\"ds-num ds-wet\">70%</span></div></div>",
+      "css": ".ds-ground { padding: 0 14px; background: #1a63a6; } .ds-row { display: grid; grid-template-columns: 64px 1fr 48px 44px; align-items: center; height: 34px; border-top: 1px solid rgba(255,255,255,0.2); color: #ffffff; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-size: 18px; font-weight: 600; letter-spacing: 0.06em; font-variant-numeric: tabular-nums; } .ds-now { justify-self: start; padding: 0 6px; border-radius: 2px; background: #ffc9a3; color: #3b2a0a; line-height: 1.35; } .ds-sky { color: #eaf4fc; font-size: 16px; font-weight: 500; } .ds-num { text-align: right; color: #e4f1fb; } .ds-row > .ds-num:nth-child(3) { color: #ffffff; } .ds-wet { justify-self: end; padding: 0 5px; border-radius: 2px; background: rgba(255,255,255,0.92); color: #17518f; line-height: 1.35; }"
+    },
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one primary action on a notice screen: a sun plate.",
+      "html": "<div class=\"ds-ground\"><button class=\"ds-btn-primary\">SHARE LOCATION</button></div>",
+      "css": ".ds-ground { padding: 14px; background: #1f6fb4; } .ds-btn-primary { height: 38px; padding: 0 16px; border: none; border-radius: 2px; background: #ffd166; color: #3b2a0a; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-size: 16px; font-weight: 700; letter-spacing: 0.12em; cursor: pointer; } .ds-btn-primary:hover { background: #ffdb85; } .ds-btn-primary:focus-visible { outline: 2px solid #ffffff; outline-offset: 2px; }"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Secondary actions in a navy well.",
+      "html": "<div class=\"ds-ground\"><button class=\"ds-btn-quiet\">CHANGE</button></div>",
+      "css": ".ds-ground { padding: 14px; background: #1f6fb4; } .ds-btn-quiet { height: 30px; padding: 0 12px; border: none; border-radius: 2px; background: rgba(4,30,64,0.34); color: #ffffff; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-size: 14px; font-weight: 700; letter-spacing: 0.12em; cursor: pointer; } .ds-btn-quiet:hover { background: rgba(255,255,255,0.2); } .ds-btn-quiet:focus-visible { outline: 2px solid #ffffff; outline-offset: 2px; }"
+    },
+    {
+      "name": "Segmented Control",
+      "kind": "chip",
+      "refersTo": "segment",
+      "description": "Two-way setting in wells; the active segment reverses to white.",
+      "html": "<div class=\"ds-ground\"><div class=\"ds-seg-group\"><button class=\"ds-seg ds-active\">24 HOUR</button><button class=\"ds-seg\">12 HOUR</button></div></div>",
+      "css": ".ds-ground { padding: 14px; background: #1a63a6; } .ds-seg-group { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; width: 332px; } .ds-seg { height: 36px; border: none; border-radius: 2px; background: rgba(4,30,64,0.34); color: #eaf4fc; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-size: 16px; font-weight: 600; letter-spacing: 0.1em; cursor: pointer; } .ds-seg:hover { color: #ffffff; } .ds-seg.ds-active { background: #ffffff; color: #1a63a6; font-weight: 700; } .ds-seg:focus-visible { outline: 2px solid #ffffff; outline-offset: 2px; }"
+    },
+    {
+      "name": "City Input",
+      "kind": "input",
+      "refersTo": "input-city",
+      "description": "City search field in a well; border and caret turn white on focus.",
+      "html": "<div class=\"ds-ground\"><input class=\"ds-input\" placeholder=\"Istanbul, London…\"></div>",
+      "css": ".ds-ground { padding: 14px; background: #1f6fb4; } .ds-input { height: 38px; width: 332px; padding: 0 10px; border: 1px solid rgba(255,255,255,0.2); border-radius: 2px; background: rgba(4,30,64,0.34); color: #ffffff; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-size: 17px; font-weight: 500; letter-spacing: 0.04em; outline: none; caret-color: #ffffff; } .ds-input:focus { border-color: #ffffff; } .ds-input::placeholder { color: #e4f1fb; }"
+    },
+    {
+      "name": "Header Row",
+      "kind": "nav",
+      "refersTo": "brand-chip",
+      "description": "Sun brand chip, centred city, local time, settings icon; seam beneath.",
+      "html": "<header class=\"ds-head\"><span class=\"ds-brand\">HAWA</span><span class=\"ds-city\">SYDNEY</span><span class=\"ds-time\">08:00</span><button class=\"ds-icon-btn\" aria-label=\"Settings\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><line x1=\"4\" y1=\"6\" x2=\"20\" y2=\"6\"/><line x1=\"4\" y1=\"12\" x2=\"20\" y2=\"12\"/><line x1=\"4\" y1=\"18\" x2=\"20\" y2=\"18\"/></svg></button></header>",
+      "css": ".ds-head { display: flex; align-items: center; gap: 10px; height: 44px; width: 360px; padding: 0 6px 0 14px; border-bottom: 1px solid rgba(255,255,255,0.2); background: #2675bb; color: #ffffff; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-size: 16px; font-weight: 600; letter-spacing: 0.12em; font-variant-numeric: tabular-nums; } .ds-brand { padding: 1px 6px; border-radius: 2px; background: #ffd166; color: #3b2a0a; font-weight: 700; } .ds-city { flex: 1; text-align: center; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; } .ds-time { color: #eaf4fc; } .ds-icon-btn { display: grid; place-items: center; width: 32px; height: 32px; border: none; border-radius: 2px; background: none; color: #eaf4fc; cursor: pointer; } .ds-icon-btn:hover { background: rgba(255,255,255,0.16); color: #ffffff; } .ds-icon-btn:focus-visible { outline: 2px solid #ffffff; outline-offset: 2px; }"
+    },
+    {
+      "name": "Stats Strip",
+      "kind": "custom",
+      "refersTo": "stats-strip",
+      "description": "Sticky bottom status line on sky-bottom: four seam-split columns of label over value.",
+      "html": "<dl class=\"ds-strip\"><div><dt>HUMIDITY</dt><dd>78%</dd></div><div><dt>WIND</dt><dd>21 KM/H</dd></div><div><dt>RAIN TODAY</dt><dd>27%</dd></div><div><dt>AIR</dt><dd><span class=\"ds-aqi\"></span>FAIR</dd></div></dl>",
+      "css": ".ds-strip { display: grid; grid-template-columns: repeat(4, 1fr); width: 360px; margin: 0; padding: 0 14px; border-top: 1px solid rgba(255,255,255,0.2); background: #1a63a6; color: #ffffff; font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif; font-weight: 600; font-variant-numeric: tabular-nums; } .ds-strip > div { padding: 8px 0 9px; } .ds-strip > div + div { border-left: 1px solid rgba(255,255,255,0.2); padding-left: 9px; } .ds-strip dt { font-size: 11px; letter-spacing: 0.16em; color: #e4f1fb; } .ds-strip dd { display: flex; align-items: center; gap: 5px; margin: 2px 0 0; font-size: 17px; letter-spacing: 0.04em; } .ds-aqi { width: 8px; height: 8px; border-radius: 1px; background: #50ccaa; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Departure Board",
+    "overview": "Hawa reads the day's weather the way a station board reads departures: what changes next, and when. The board is set against the sky of the place it reports on. By day the ground is a classic sky blue, brighter at the top where the big temperature sits and deeper under the rows. By night (when the location's `is_day` is 0) it turns deep navy. On that ground sit translucent split-flap cells, hairline-seamed rows, and white condensed caps with tabular figures. Rank comes from size, weight, case and a few small warm plates, never from cards.\n\nDensity is high and calm. Everything sits on one 14px gutter inside a 360px column, and rows are uniform 34px timetable lines. The text itself is all near-white, so hierarchy comes from weight and size rather than from dimming. Warmth (sun yellow and peach) appears only as plates with dark warm ink: the brand chip, the lead row, the NOW chip, and the primary button. Meteocons, the product's bundled icon set, sit in the SKY column at row size.\n\nMotion belongs to the flaps. When fresh data lands, only the characters that changed flip in, one after another from left to right. When nothing changed, the board stays still.",
+    "keyCharacteristics": [
+      "A sky-blue ground by day and a navy ground by night, following the location's own daylight",
+      "Translucent white flap cells split by a navy hairline; white caps with tabular figures",
+      "Warm colour only as plates with dark warm ink; never as text on the sky",
+      "Hairline seams between rows; no cards, no shadows; the ground is the only gradient",
+      "Rain at 30% or more is a white chip with blue ink",
+      "Only changed characters flip, staggered left to right; still under reduced motion"
+    ],
+    "rules": [
+      { "name": "The Warm Plate Rule", "body": "Warm colours appear only as plate fills carrying warm ink: brand chip, lead row, NOW chip, primary button. The single exception is the WEEK underline in peach. Never set warm-coloured text on the sky.", "section": "colors" },
+      { "name": "The State-Only Rule", "body": "The rain chip appears only at a 30% chance or more, and alert blush appears only on an app error. A dry hour and a working app show neither.", "section": "colors" },
+      { "name": "The Readable Sky Rule", "body": "Text must reach 4.5:1 against the sky at its own position (3:1 for text at 24px, or 18.66px bold, and up), measured on the brightest stop it can sit on. The top of the day gradient is the bright end. Darken the ground or use a well there; never accept a lower ratio.", "section": "colors" },
+      { "name": "The Caps Board Rule", "body": "Everything on the board is set in caps: labels, values, rows and buttons. Only full sentences (notice text, hints, credits, city detail lines) stay in sentence case.", "section": "typography" },
+      { "name": "The Weight-Not-Dimming Rule", "body": "Every ink is near-white, so a secondary role steps down in weight (700 to 600 to 500) and size, never into a grey.", "section": "typography" },
+      { "name": "The Tabular Rule", "body": "Figures are tabular everywhere (`font-variant-numeric: tabular-nums` on the body). Numeric columns are right-aligned.", "section": "typography" },
+      { "name": "The Local Casing Rule", "body": "Place names take `lang=\"tr\"` or `lang=\"az\"` only when the name contains a Turkish- or Azeri-specific letter. That way CSS uppercasing maps i to İ correctly, and English exonyms such as \"Izmir\" stay IZMIR.", "section": "typography" },
+      { "name": "The Sky Ground Rule", "body": "The only gradient is the page ground: a vertical sky, by day or by night. Components are flat translucent fills or opaque plates, with no shadows, glows or gradients of their own.", "section": "elevation" }
+    ],
+    "dos": [
+      "**Do** set the ground from the location's own daylight: the day sky while the sun is up there, the night navy after.",
+      "**Do** set changing values (temperature, lead text) as flap cells, and flip only the characters that changed, staggered 45ms from left to right.",
+      "**Do** turn every flip and idle pulse off under `prefers-reduced-motion: reduce`.",
+      "**Do** put inputs, quiet buttons and segments in a well so their text holds contrast on the bright sky.",
+      "**Do** separate rows and regions with 1px seams, and keep rows at 34px on the 14px gutter.",
+      "**Do** step secondary text down by weight and size, since all inks are near-white.",
+      "**Do** use tabular figures and right-align numeric columns."
+    ],
+    "donts": [
+      "**Don't** set yellow or peach as text on the sky; warm colour is a plate with warm ink.",
+      "**Don't** group content in cards, panels or rounded containers; cells hold characters and controls, never sections.",
+      "**Don't** add box shadows or glows, or give a component its own gradient.",
+      "**Don't** show the rain chip below a 30% chance, or alert blush outside an app error.",
+      "**Don't** draw the split hairline across characters at lead-row size on a plate; at that size it reads as a strikethrough.",
+      "**Don't** replace the Meteocons with another icon set or with glyph characters.",
+      "**Don't** flip characters that did not change, and don't animate on first paint."
+    ]
+  }
+}

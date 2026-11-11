@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "Hawa - Weather",
+    "description": "Extension name"
+  },
+  "appDescription": {
+    "message": "A minimal extension that shows the real weather for your location, with the temperature right on the toolbar.",
+    "description": "Extension description"
+  }
+}
